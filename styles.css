@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    background-color: #000000;
+    color: #00ff00;
+
+}
+
+header {
+    background-color: #000080;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #00ffff;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffff00;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.version {
+    font-size: 16px;
+    color: #00ffff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#ticket-controls {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #00ffff;
+}
+
+#ticket-controls h2 {
+    margin-top: 0;
+    color: #ffff00;
+}
+
+#status-filter {
+    margin-left: 10px;
+    padding: 6px;
+    font-family: "Courier New", monospace;
+    background-color: #000000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+}
+
+#status-filter:hover,
+#status-filter:focus {
+    background-color: #111111;
+    border-color: #ffff00;
+}
+
+
+#ticket-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#ticket-list article {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    border: 2px solid #00ffff;
+}
+
+#ticket-list article h3 {
+    margin-top: 0;
+    color: #ffff00;
+}
+
+#ticket-list article h4 {
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+#ticket-count {
+    color: #00ff00;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #000080;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 4px solid #00ffff;
+}
+
+.ticket-status {
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 8px;
+    border: 1px solid;
+}
+
+.status-open {
+    color:#ff5555;
+}
+
+.status-in-progress {
+    color:#ffff00;
+}
+
+.status-closed {
+    color:#00ff00;
+}
+
+.system-status {
+    font-size: 14px;
+    color: #00ff00;
+}
+@media (max-width: 700px) {
+    #ticket-list {
+        grid-template-columns: 1fr;
+    }
+
+    #status-filter {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+
+    }
+}

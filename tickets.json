@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1001,
+        "issue": "Unable to connect to Wi-Fi",
+        "category": "Network",
+        "status": "Open",
+        "description": "User is unable to connect their laptop to the campus wireless network."
+    },
+    {
+        "id": 1002,
+        "issue": "Password reset needed",
+        "category": "Account",
+        "status": "Closed",
+        "description": "User forgot their account password and requested a password reset."
+    },
+    {
+        "id": 1003,
+        "issue": "Computer running slowly",
+        "category": "Hardware",
+        "status": "In Progress",
+        "description": "User reports that their desktop computer has become unusually slow."
+    },
+    {
+        "id": 1004,
+        "issue": "Printer not responding",
+        "category": "Hardware",
+        "status": "Open",
+        "description": "Office printer is powered on but does not respond when the user attempts to print."
+    },
+    {
+        "id": 1005,
+        "issue": "Email application not syncing",
+        "category": "Software",
+        "status": "In Progress",
+        "description": "User reports that new email messages are not appearing in their desktop email application."
+    },
+    {
+        "id": 1006,
+        "issue": "Software installation completed",
+        "category": "Software",
+        "status": "Closed",
+        "description": "Requested software was installed and tested successfully on the user's workstation."
+    },
+    {
+        "id": 1007,
+        "issue": "VPN connection drops frequently",
+        "category": "Network",
+        "status": "Open",
+        "description": "User reports that their VPN connection drops multiple times during the day, causing interruptions in work."
+    }
+]

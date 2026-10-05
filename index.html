@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeskSim | Held Desk Ticket Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>DeskSim <span class="version">v1.0</span></h1>
+        <p>Help Desk Ticket Simulator</p>
+        <p class="system-status">
+            SYSTEM STATUS: <span id="system-state">LOADING...</span>
+        </p>
+    </header>
+
+    <main>
+        
+        <section id="ticket-controls">
+            <h2>Support Tickets</h2>
+
+            <label for="status-filter">Filter by Status:</label>
+            <select id="status-filter">
+                <option value="all">All Tickets</option>
+                <option value="open">Open</option>
+                <option value="in-progress">In Progress</option>
+                <option value="closed">Closed</option>
+            </select>
+
+            <p id="ticket-count"></p>
+        </section>
+        
+        <section id="ticket-list" aria-live="polite">
+            <!-- Ticket list will be dynamically populated here -->
+        </section>
+    </main>
+    <footer>
+        <p>DeskSim v1.0 | Help Desk Ticket Simulator | &copy; 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
